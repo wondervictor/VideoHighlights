@@ -108,3 +108,5 @@ ENV/
 .ipynb_checkpoints
 .DS_Store
 #*.json
+
+.idea
