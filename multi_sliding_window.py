@@ -71,6 +71,7 @@ def generate_segments(video, label, stride=5):
 def create_reader():
     with open('data.txt', 'r') as f:
         file_names = f.readlines()
+    file_names = random.sample(file_names, 300)
     file_names = [x.rstrip('\n\r').replace('.pkl', '') for x in file_names]
     labels = load_labels()
     all_data = []
